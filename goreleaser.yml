@@ -29,3 +29,4 @@ archives:
       format: zip
   files:
     - misc/addicional
+    - dist/metadata.json
