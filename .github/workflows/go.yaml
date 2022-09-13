@@ -9,17 +9,22 @@ jobs:
       with:
         go-version: 1.16
     - uses: actions/checkout@v1
-
+    - name: pre shell tests
+      run: |
+        echo "Running"
+        ls -al .
+        tree
     - name: stable release
       uses: goreleaser/goreleaser-action@v2
       with:
         version: latest
-        args: --config goreleaser-stable.yml
+        args: --config goreleaser.yml
       env:
         GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
     - name: shell tests
       run: |
         echo "Running"
+        tree
         ls -al dist
 
 
