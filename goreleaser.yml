@@ -32,8 +32,8 @@ archives:
 
 release:
   extra_files:
-    - glob: metadata.json
-    - glob: CHANGELOG.md
-    - glob: artifacts.json
-    - glob: config.yaml
+    - glob: dist/metadata.json
+    - glob: dist/CHANGELOG.md
+    - glob: dist/artifacts.json
+    - glob: dist/config.yaml
 
