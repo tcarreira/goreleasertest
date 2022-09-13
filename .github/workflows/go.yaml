@@ -20,7 +20,7 @@ jobs:
         version: latest
         args: --config goreleaser.yml
       env:
-        GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
     - name: shell tests
       run: |
         echo "Running"
